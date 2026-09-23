@@ -3,6 +3,11 @@
     1. 显示读取 .env 文件
     2. 隐式读取 .env 文件（和1 一样都需要加载 load_dotenv 文件才可以）
 """
+"""
+    load_dotenv() —— 负责读取 .env 文件，把里面的键值对写入当前进程的环境变量池。
+    os.getenv() —— 负责从环境变量池里取值。
+"""
+
 
 from openai import OpenAI
 from dotenv import load_dotenv

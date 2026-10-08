@@ -2,6 +2,17 @@
     这一章都是在去做关于输入输出的格式限制
     关于模型的建造
 """
+""" PromptTemplate() 构造方法创建 
+    提示词模版参数
+    template = 提示词模版，包含变量占位符号
+    input_variables = 将其值作为提示输入的变量名称列表
+    partial_variables = 提示词模版携带的 部分变量字典，后续不用再填充
+    
+    方法
+    format() 输入格式化提示
+"""
+
+
 from langchain_core.prompts import PromptTemplate
 
 template = PromptTemplate(
